@@ -1,0 +1,197 @@
+body {
+  font-family: sans-serif;
+}
+
+h2 {
+  color: #319795;
+}
+
+/* Css Input Range */
+.range-slider {
+  flex: 1;
+}
+
+.sliderticks {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.sliderticks span {
+  display: flex;
+  justify-content: center;
+  width: 1px;
+  height: 10px;
+  background: #d3d3d3;
+  line-height: 40px;
+}
+
+/*=============
+End tick marks
+=========================*/
+
+input[type="range"] {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  border-radius: 15px;
+  /*  overflow: hidden;  remove this line*/
+
+  /* New additions */
+  height: 6px;
+  background: #ccc;
+}
+
+/* Thumb: webkit */
+input[type="range"]::-webkit-slider-thumb {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  height: 15px;
+  width: 15px;
+  background-color: #319795;
+  border-radius: 50%;
+  border: none;
+
+  /* box-shadow: -407px 0 0 400px #f50; emove this line */
+  transition: 0.2s ease-in-out;
+}
+
+/* Thumb: Firefox */
+input[type="range"]::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  background-color: #5ddfdd;
+  border-radius: 50%;
+  border: none;
+
+  /* box-shadow: -407px 0 0 400px #f50; emove this line */
+  transition: 0.2s ease-in-out;
+}
+
+/* Hover, active & focus Thumb: Webkit */
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  box-shadow: 0 0 0 10px rgba(0, 204, 255, 0.1);
+}
+input[type="range"]:active::-webkit-slider-thumb {
+  box-shadow: 0 0 0 13px rgba(0, 242, 255, 0.2);
+}
+input[type="range"]:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 13px rgba(0, 234, 255, 0.2);
+}
+
+/* End CSS input Range */
+
+.css-slplgr {
+  opacity: 0.6;
+  width: 100%;
+  background: var(--chakra-colors-teal-500);
+  border: var(--chakra-borders-none);
+  height: var(--chakra-sizes-2);
+  transition: width 0.5s ease-in-out 100ms;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.lead {
+  color: #285e61;
+  font-weight: 800;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body.dark-mode {
+  background-color: #2d2d2d; /* Dark background color */
+  color: #ffffff; /* Light text color for better visibility */
+}
+
+.theme-color-toggle {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icon {
+  margin-right: 8px;
+  font-size: 20px; /* Adjust font size as needed */
+  color: #f8f8f8; /* Icon color in light mode */
+}
+
+body.dark-mode .icon {
+  color: #1a1a1a; /* Icon color in dark mode */
+}
+
+.inputNumber {
+  color: #086968;
+  font-weight: 400;
+}
+
+.fomrNumberInput {
+  padding: 10px;
+  width: 99%;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #ccc;
+  color: #0e6f6e;
+}
+
+.formHistory {
+  border: 1px solid #285e61;
+  padding: 16px;
+}
+
+.formListHistory {
+  list-style: none;
+}
+
+.btnAgain {
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  background-color: #285e61;
+  color: #fff;
+}
+
+.FormGameTable {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.chakra-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.chakra-table th,
+.chakra-table td {
+  padding: 8px;
+  text-align: center;
+}
+
+.chakra-divider {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 0;
+}
+
+.css-1yh1pn8 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.correctAction {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
